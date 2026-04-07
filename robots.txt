@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soworkdriver.vercel.app/sitemap.xml
