@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <title>รับสมัครพนักงานขับรถ | SO WORK</title>
-  <meta name="description" content="SO WORK เปิดรับสมัครพนักงานขับรถหลายตำแหน่ง สมัครออนไลน์ได้ทันที พร้อมติดต่อเจ้าหน้าที่รับสมัครโดยตรง">
+  <title>รับสมัครพนักงานขับรถ | สยามราชธานี จำกัด (มหาชน)</title>
+  <meta name="description" content="สยามราชธานี (SO) เปิดรับสมัครพนักงานขับรถหลายตำแหน่ง บริษัทจดทะเบียนในตลาดหลักทรัพย์ ประสบการณ์กว่า 48 ปี สมัครออนไลน์หรือโทรสอบถามได้ทันที">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://soworkdriver.vercel.app/">
   <meta property="og:type" content="website">
@@ -23,11 +23,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/analytics.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "SO WORK",
+        "alternateName": "สยามราชธานี จำกัด (มหาชน)",
+        "url": "https://soworkdriver.vercel.app/",
+        "logo": "https://soworkdriver.vercel.app/images/sowork-logo.png",
+        "description": "ผู้ให้บริการ Outsourcing Solutions ครบวงจร และเปิดรับสมัครพนักงานขับรถหลายตำแหน่ง",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "พระประแดง",
+          "addressRegion": "สมุทรปราการ",
+          "addressCountry": "TH"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "name": "SO WORK Driver Recruitment",
+        "url": "https://soworkdriver.vercel.app/",
+        "inLanguage": "th-TH"
+      },
+      {
+        "@type": "ItemList",
+        "name": "ตำแหน่งงานขับรถที่เปิดรับ",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://soworkdriver.vercel.app/apply-chauffeur-thai.html",
+            "name": "ขับรถผู้บริหารคนไทย"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://soworkdriver.vercel.app/apply-chauffeur-expat.html",
+            "name": "ขับรถผู้บริหารต่างชาติ"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://soworkdriver.vercel.app/apply-fleet-driver.html",
+            "name": "ขับรถส่วนกลาง"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://soworkdriver.vercel.app/apply-valet.html",
+            "name": "พนักงานรับรถ-จอด (Valet)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://soworkdriver.vercel.app/apply-truck-t2.html",
+            "name": "ขับรถบรรทุก (ท.2)"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
-
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">
@@ -49,8 +110,14 @@
 
   <main id="main">
     <section class="hero">
-      <div class="hero__inner hero__grid">
-        <div class="hero__copy">
+      <div class="hero__bg" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline poster="images/hero-driving.jpg">
+          <source src="https://cdn.coverr.co/videos/coverr-driving-at-night-vc6o7ninmp/1080p.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy hero__content-card">
           <h1>ร่วมทีมขับเคลื่อนความมั่นใจ<br>กับผู้นำด้าน Outsourcing Solutions</h1>
           <p class="hero__lead">สยามราชธานี จำกัด (มหาชน) เปิดรับสมัครพนักงานขับรถมืออาชีพหลายตำแหน่ง สมัครออนไลน์ได้ทุกตำแหน่ง หรือโทรหาเจ้าหน้าที่รับสมัครโดยตรง</p>
           <div class="hero__badges">
@@ -58,9 +125,6 @@
             <span class="badge">ไม่มีประสบการณ์ มีสอนงานให้</span>
             <span class="badge">ทีมงานช่วยดูแลตั้งแต่สมัครจนเริ่มงาน</span>
           </div>
-        </div>
-        <div class="hero__visual">
-          <img class="hero__img" src="images/hero-driving.jpg" alt="มุมมองจากที่นั่งคนขับบนถนน" width="800" height="600" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
@@ -94,24 +158,64 @@
       <h2 class="section__title">ตำแหน่งที่เปิดรับ</h2>
       <div class="cards">
         <article class="card">
-          <div class="card__media"><img src="images/card-chauffeur-thai.png" alt="ขับรถผู้บริหารคนไทย" width="900" height="563" loading="lazy" decoding="async"></div>
-          <div class="card__body"><h2>ขับรถผู้บริหารคนไทย</h2><p>บริการขับรถผู้บริหารระดับสูง มาตรฐานมืออาชีพ</p><div class="card__actions"><a class="btn btn--primary btn--block" href="apply-chauffeur-thai.html">ดูรายละเอียดและสมัคร</a></div></div>
+          <div class="card__media">
+            <img src="images/card-chauffeur-thai.png" alt="พนักงานขับรถผู้บริหารและผู้บริหารในรถยนต์" width="900" height="563" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <h2>ขับรถผู้บริหารคนไทย</h2>
+            <p>บริการขับรถผู้บริหารระดับสูง มาตรฐานมืออาชีพ เน้นความปลอดภัยและบริการเหนือระดับ</p>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--block" href="apply-chauffeur-thai.html">ดูรายละเอียดและสมัคร</a>
+            </div>
+          </div>
         </article>
         <article class="card">
-          <div class="card__media"><img src="images/card-chauffeur-expat.png" alt="ขับรถผู้บริหารต่างชาติ" width="900" height="563" loading="lazy" decoding="async"></div>
-          <div class="card__body"><h2>ขับรถผู้บริหารต่างชาติ</h2><p>รองรับงานผู้บริหารต่างชาติและมารยาทสากล</p><div class="card__actions"><a class="btn btn--primary btn--block" href="apply-chauffeur-expat.html">ดูรายละเอียดและสมัคร</a></div></div>
+          <div class="card__media">
+            <img src="images/card-chauffeur-expat.png" alt="พนักงานเปิดประตูรถให้ผู้โดยสาร — บริการขับรถผู้บริหาร" width="900" height="563" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <h2>ขับรถผู้บริหารต่างชาติ</h2>
+            <p>รองรับการสื่อสารและมารยาทสากล บริการขับรถสำหรับผู้บริหารชาวต่างชาติ</p>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--block" href="apply-chauffeur-expat.html">ดูรายละเอียดและสมัคร</a>
+            </div>
+          </div>
         </article>
         <article class="card">
-          <div class="card__media"><img src="images/card-fleet.png" alt="ขับรถส่วนกลาง" width="900" height="563" loading="lazy" decoding="async"></div>
-          <div class="card__body"><h2>ขับรถส่วนกลาง</h2><p>ขับรถประจำองค์กรและภารกิจทั่วไป</p><div class="card__actions"><a class="btn btn--primary btn--block" href="apply-fleet-driver.html">ดูรายละเอียดและสมัคร</a></div></div>
+          <div class="card__media">
+            <img src="images/card-fleet.png" alt="พนักงานขับรถในชุดยูนิฟอร์ม — งานขับรถส่วนกลาง" width="900" height="563" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <h2>ขับรถส่วนกลาง</h2>
+            <p>ขับรถประจำองค์กร งานส่งส่วนกลางและภารกิจทั่วไปตามนโยบายลูกค้า</p>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--block" href="apply-fleet-driver.html">ดูรายละเอียดและสมัคร</a>
+            </div>
+          </div>
         </article>
         <article class="card">
-          <div class="card__media"><img src="images/card-valet.png" alt="พนักงานรับรถ-จอด" width="900" height="563" loading="lazy" decoding="async"></div>
-          <div class="card__body"><h2>พนักงานรับรถ-จอด (Valet)</h2><p>บริการรับ-ส่งรถและดูแลลานจอดอย่างมืออาชีพ</p><div class="card__actions"><a class="btn btn--primary btn--block" href="apply-valet.html">ดูรายละเอียดและสมัคร</a></div></div>
+          <div class="card__media">
+            <img src="images/card-valet.png" alt="พนักงาน Valet รับกุญแจรถจากลูกค้า" width="900" height="563" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <h2>พนักงานรับรถ-จอด (Valet)</h2>
+            <p>บริการรับ-ส่งรถ จอดรถ และดูแลลานจอดอย่างเป็นมืออาชีพ</p>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--block" href="apply-valet.html">ดูรายละเอียดและสมัคร</a>
+            </div>
+          </div>
         </article>
         <article class="card">
-          <div class="card__media"><img src="images/card-truck.jpg" alt="ขับรถบรรทุก ท.2" width="900" height="563" loading="lazy" decoding="async"></div>
-          <div class="card__body"><h2>ขับรถบรรทุก (ท.2)</h2><p>ขับรถบรรทุกตามใบอนุญาต ท.2 ตามมาตรฐานความปลอดภัย</p><div class="card__actions"><a class="btn btn--primary btn--block" href="apply-truck-t2.html">ดูรายละเอียดและสมัคร</a></div></div>
+          <div class="card__media">
+            <img src="images/card-truck.jpg" alt="รถบรรทุกพ่วงขนาดใหญ่บนถนน — งานขับรถบรรทุก (ท.2)" width="900" height="563" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <h2>ขับรถบรรทุก (ท.2)</h2>
+            <p>ขับรถบรรทุกตามใบอนุญาต ท.2 ปฏิบัติงานตามมาตรฐานความปลอดภัย</p>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--block" href="apply-truck-t2.html">ดูรายละเอียดและสมัคร</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
@@ -120,14 +224,28 @@
       <div class="about__grid">
         <div>
           <h2 class="section__title">เกี่ยวกับสยามราชธานี (SO)</h2>
-          <p class="section__intro" style="margin-bottom: 1rem;">สยามราชธานี จำกัด (มหาชน) หรือ SO เป็นผู้นำด้านการให้บริการ <strong>Outsourcing Solutions</strong> ครบวงจร</p>
+          <p class="section__intro" style="margin-bottom: 1rem;">สยามราชธานี จำกัด (มหาชน) หรือ SO เป็นผู้นำด้านการให้บริการ <strong>Outsourcing Solutions</strong> ครบวงจร ทั้งการบริหารจัดการบุคลากร (พนักงานขับรถ พนักงานสำนักงาน/ช่างเทคนิค) ดูแลภูมิทัศน์ และบริการเช่ารถยนต์</p>
           <p style="margin: 0; color: var(--color-muted);">บริษัทมีประสบการณ์กว่า 48 ปี จดทะเบียนในตลาดหลักทรัพย์แห่งประเทศไทย สำนักงานตั้งอยู่ที่ อำเภอพระประแดง จังหวัดสมุทรปราการ</p>
         </div>
         <div class="about__aside">
           <figure class="about__figure">
-            <img class="about__photo" src="images/about-team.png" alt="ทีมงานชาวเอเชียร่วมทำงาน" width="1000" height="750" loading="lazy" decoding="async">
+            <img class="about__photo" src="images/about-team.png" alt="ทีมงานชาวเอเชียร่วมทำงานในออฟฟิศ — บรรยากาศองค์กรในประเทศไทย" width="1000" height="750" loading="lazy" decoding="async">
             <figcaption class="about__caption">ร่วมทีมมืออาชีพกับองค์กรที่มั่นคง</figcaption>
           </figure>
+          <div class="about__stats">
+            <div class="stat">
+              <div class="stat__value">48+</div>
+              <div class="stat__label">ปีประสบการณ์</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">SET</div>
+              <div class="stat__label">บริษัทจดทะเบียนในตลาดหลักทรัพย์ฯ</div>
+            </div>
+            <div class="stat" style="grid-column: 1 / -1;">
+              <div class="stat__value" style="font-size: 1.1rem;">Outsourcing</div>
+              <div class="stat__label">บุคลากร · ภูมิทัศน์ · เช่ารถยนต์</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -136,10 +254,11 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p style="margin: 0 0 0.5rem;"><strong>สยามราชธานี จำกัด (มหาชน)</strong> — รับสมัครพนักงานขับรถ</p>
-      <p style="margin: 0; opacity: 0.9;">สำนักงานตั้งอยู่ที่ อำเภอพระประแดง จังหวัดสมุทรปราการ</p>
+      <p style="margin: 0; opacity: 0.9;">สำนักงานตั้งอยู่ที่ อำเภอพระประแดง จังหวัดสมุทรปราการ · โปรดเลือกตำแหน่งด้านบนเพื่อดูเบอร์โทรและลิงก์สมัครงานของแต่ละงาน</p>
+      <p style="margin: 0.6rem 0 0; opacity: 0.9;">แหล่งข้อมูลทีมการตลาด: <a href="seo/local-offpage-playbook.html">Local SEO Playbook</a> · <a href="seo/measurement-kpi.html">SEO KPI 90 วัน</a></p>
+      <p class="photo-credit">ภาพตำแหน่งขับรถผู้บริหาร ส่วนกลาง Valet และส่วนเกี่ยวกับบริษัทเป็นภาพจากองค์กร · ภาพ Hero จาก <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a> · ภาพรถบรรทุกพ่วง: <a href="https://unsplash.com/photos/778IldZFCDk" target="_blank" rel="noopener noreferrer">Isher Singh</a></p>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
