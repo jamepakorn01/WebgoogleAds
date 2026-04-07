@@ -419,7 +419,7 @@ a:hover {
   padding: 0.65rem 1.1rem;
   border-radius: 10px;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -655,6 +655,9 @@ a:hover {
   border-radius: var(--radius);
   padding: 1.5rem 1.5rem 1.75rem;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .content-panel h2 {
@@ -721,12 +724,14 @@ a:hover {
 }
 
 .benefits {
-  margin-top: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
   padding: 1.25rem 1.25rem 1.3rem;
   border-radius: var(--radius);
   border: 1px solid rgba(227, 30, 36, 0.4);
   background: radial-gradient(circle at top left, rgba(227, 30, 36, 0.16), transparent 55%), var(--color-bg-elevated);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  order: -1;
 }
 
 .benefits__headline {
@@ -780,9 +785,14 @@ a:hover {
 
 .cta-box h3 {
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--color-brand);
+}
+
+.cta-box .btn--block {
+  min-height: 48px;
+  font-size: 1.05rem;
 }
 
 .phone-block {
@@ -801,7 +811,7 @@ a:hover {
 }
 
 .phone-block a {
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 800;
   text-decoration: none;
   color: var(--color-ink);
@@ -813,7 +823,7 @@ a:hover {
 
 .phone-block span {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-muted);
 }
