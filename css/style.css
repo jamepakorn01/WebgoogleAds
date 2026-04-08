@@ -1232,3 +1232,219 @@ a:focus-visible {
     aspect-ratio: 16 / 10;
   }
 }
+
+/* —— Display ads mockups —— */
+.ads-page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.ads-page__head {
+  margin-bottom: 1.25rem;
+}
+
+.ads-page__head p {
+  color: var(--color-muted);
+  margin: 0.5rem 0 0;
+}
+
+.ads-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.ads-section {
+  margin-top: 1.5rem;
+}
+
+.ads-section h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.1rem;
+}
+
+.ad-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.ad-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.85rem;
+  box-shadow: var(--shadow);
+}
+
+.ad-card__label {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 0.55rem;
+}
+
+.ad-preview {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.ad-preview--336x280 { aspect-ratio: 336 / 280; }
+.ad-preview--300x250 { aspect-ratio: 300 / 250; }
+.ad-preview--250x250 { aspect-ratio: 1 / 1; }
+.ad-preview--200x200 { aspect-ratio: 1 / 1; }
+.ad-preview--728x90 { aspect-ratio: 728 / 90; }
+.ad-preview--468x60 { aspect-ratio: 468 / 60; }
+.ad-preview--970x90 { aspect-ratio: 970 / 90; }
+.ad-preview--970x250 { aspect-ratio: 970 / 250; }
+.ad-preview--300x600 { aspect-ratio: 1 / 2; }
+.ad-preview--160x600 { aspect-ratio: 160 / 600; }
+.ad-preview--320x100 { aspect-ratio: 320 / 100; }
+
+.ad-theme {
+  --ad-bg-1: #111827;
+  --ad-bg-2: #1d4ed8;
+  --ad-accent: #f59e0b;
+  --ad-cta-bg: #ffffff;
+  --ad-cta-text: #111827;
+  --ad-head: #ffffff;
+  --ad-text: rgba(255, 255, 255, 0.92);
+  --ad-chip-bg: rgba(255, 255, 255, 0.16);
+  --ad-chip-text: #ffffff;
+  --ad-overlay: radial-gradient(circle at 85% 10%, rgba(255, 255, 255, 0.18), transparent 42%);
+}
+
+.ad-theme--chauffeur-thai {
+  --ad-bg-1: #0b1f47;
+  --ad-bg-2: #1f4aa8;
+  --ad-accent: #f3c766;
+}
+
+.ad-theme--chauffeur-expat {
+  --ad-bg-1: #101828;
+  --ad-bg-2: #0f4d8f;
+  --ad-accent: #67e8f9;
+}
+
+.ad-theme--fleet {
+  --ad-bg-1: #0f172a;
+  --ad-bg-2: #2563eb;
+  --ad-accent: #93c5fd;
+}
+
+.ad-theme--valet {
+  --ad-bg-1: #7c2d12;
+  --ad-bg-2: #ea580c;
+  --ad-accent: #fde68a;
+}
+
+.ad-theme--truck {
+  --ad-bg-1: #111827;
+  --ad-bg-2: #374151;
+  --ad-accent: #facc15;
+}
+
+.ad-layout {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(120deg, var(--ad-bg-1), var(--ad-bg-2));
+}
+
+.ad-layout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ad-overlay);
+  pointer-events: none;
+}
+
+.ad-visual {
+  position: relative;
+}
+
+.ad-visual::after {
+  content: "";
+  position: absolute;
+  inset: 10% 12%;
+  border-radius: 999px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.03));
+  filter: blur(1px);
+}
+
+.ad-copy {
+  position: relative;
+  padding: clamp(0.3rem, 2.3vw, 0.8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.ad-chip {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: clamp(7px, 1.5vw, 11px);
+  font-weight: 700;
+  color: var(--ad-chip-text);
+  background: var(--ad-chip-bg);
+  padding: 0.12rem 0.36rem;
+  border-radius: 999px;
+}
+
+.ad-headline {
+  margin: 0;
+  color: var(--ad-head);
+  line-height: 1.15;
+  font-size: clamp(9px, 2.4vw, 22px);
+  font-weight: 800;
+}
+
+.ad-subline {
+  margin: 0;
+  color: var(--ad-text);
+  font-size: clamp(7px, 1.55vw, 13px);
+  line-height: 1.3;
+}
+
+.ad-cta {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  background: var(--ad-cta-bg);
+  color: var(--ad-cta-text);
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  font-size: clamp(7px, 1.6vw, 12px);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ad-layout--wide {
+  grid-template-columns: 36% 64%;
+}
+
+.ad-layout--tall {
+  grid-template-columns: 1fr;
+  grid-template-rows: 45% 55%;
+}
+
+.ad-layout--tall .ad-visual::after {
+  inset: 18% 22%;
+}
+
+.ad-layout--mobile {
+  grid-template-columns: 42% 58%;
+}
+
+.ad-note {
+  margin-top: 1.25rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
